@@ -1,0 +1,29 @@
+.panel-title {
+    color: #337ab7;
+}
+.panel-info {
+    line-height: 20px;
+}
+
+/* .img-thumbnail {
+    display:block;max-width:100%;height:auto;
+} */
+/* .range {
+    margin-top: 15px;
+    margin-bottom: 15px;
+} */
+.attr {
+    margin-top: 20px;
+
+}
+.getto {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.score{
+    border:1px solid gray; 
+}
+.container{
+    border-left:1px solid #f3f3f3; 
+    border-right:1px solid #f3f3f3; 
+}
