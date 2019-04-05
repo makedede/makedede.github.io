@@ -4,7 +4,9 @@
 .panel-info {
     line-height: 20px;
 }
-
+.panel-body {
+    border-bottom: 2px;
+}
 /* .img-thumbnail {
     display:block;max-width:100%;height:auto;
 } */
