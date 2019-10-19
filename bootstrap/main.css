@@ -36,10 +36,11 @@
 .col-sm-1.line{
     width: 1%!important;
 } 
+
 body
-    {
-    font-family:"Roboto",Helvetica,Arial,sans-serif
-    }
+{
+	font-family:"Roboto",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;font-weight:300;
+}
 .journal{
     font-style: italic
 }
@@ -47,10 +48,10 @@ body
     font-weight: bold
 }
 .description{
-    font-size: 18px
+    font-size: 16px
 }
 .authors{
-    font-size: 18px
+    font-size: 16px
 }
 .Conference{
     font-style: italic
@@ -59,10 +60,7 @@ body
     font-size: 22px
 }
 
-body
-{
-	font-family:"Roboto",Helvetica,Arial,sans-serif;font-size:16px;line-height:1.5;font-weight:300;
-}
+
 .content
 {
 		width : 900px;
