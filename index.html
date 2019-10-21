@@ -60,10 +60,11 @@
         window.close();
         }    */
     });
+    $(document).ready(function(){
+        $("#r_ul").width($("#avatar").width()*1.25);
+    });
     </script>
-    <style>
-    img{ width: 100%; height: auto;max-width: 100%; display: block; } 
-    </style>
+    
 <body>
     <div class="container">
         <br>
@@ -112,10 +113,9 @@
         <div class="col-sm-4">
             <div style="width: 60%;" class="center-block">
             <img src="./img/avatar-195x195.png" class="img-responsive center-block" style="width:auto; height:auto;" id='avatar'>
-            </div>
             <br>
-            
-                <ul style="list-style:none">
+            </div>
+            <ul class="center-block" style="list-style:none;" id='r_ul'>
                     <li style="font-size:18px">
                         <b>Post</b>：83 Tat Chee Avenue, Y6424, Yeung Building, Kowloon, Hong Kong <br>
                     </li>
@@ -126,9 +126,8 @@
                         <b>Email</b>：kede.ma [AT] cityu.edu.hk 
                     </li>
                 </ul>
-                
-                <br>
-                
+             <br>
+           
             </div>
             
         </div>
