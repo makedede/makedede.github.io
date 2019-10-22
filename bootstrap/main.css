@@ -1,8 +1,9 @@
-.panel{
-	box-shadow: 0 0 0 0;
-}
+
 .panel-body{
 	border-bottom:3px solid rgba(217, 217, 217);
+}
+.panel{
+	box-shadow: 0px 0px 0px !important;
 }
 .col-sm-1.line{
     width: 1%!important;
