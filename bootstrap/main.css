@@ -1,5 +1,5 @@
 .panel{
-	box-shadow: 0 0 1px rgba(0, 0, 0, .05);
+	box-shadow: 0 0 0 0;
 }
 .panel-body{
 	border-bottom:3px solid rgba(217, 217, 217);
