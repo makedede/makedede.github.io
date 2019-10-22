@@ -9,114 +9,73 @@
 
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/main.css">
-    <script src="./jquery/jquery-3.3.1.min.js"></script>
-    <script src="./bootstrap/jquery.range.js"></script>
-    <link rel="stylesheet" href="./bootstrap/jquery.range.css">
+
 </head>
+<style>
+        .container{
+            min-width: 1500px;
+        }
+</style>
 
-<script type="text/javascript">
-	$(document).ready(function(){
-        var browser = {
-            versions: function() {
-                var u = navigator.userAgent, app = navigator.appVersion;
-                return {     //移动终端浏览器版本信息
-                    trident: u.indexOf('Trident') > -1, //IE内核
-                    presto: u.indexOf('Presto') > -1, //opera内核
-                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
-                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
-                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
-                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
-                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
-                    iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
-                    iPad: u.indexOf('iPad') > -1, //是否iPad
-                    webApp: u.indexOf('Safari') == -1 //是否web应该程序，没有头部与底部
-                };
-            } (),
-            language: (navigator.browserLanguage || navigator.language).toLowerCase()
-        }
-        if (browser.versions.mobile) {//判断是否是移动设备打开。browser代码在下面
-            /* var ua = navigator.userAgent.toLowerCase();//获取判断用的对象
-            if (ua.match(/MicroMessenger/i) == "micromessenger") {
-            //在微信中打开
-            setInterval(WeixinJSBridge.call('closeWindow'),2000);
-            }
-            if (ua.match(/WeiBo/i) == "weibo") {
-            //在新浪微博客户端打开
-            }
-            if (ua.match(/QQ/i) == "qq") {
-            //在QQ空间打开
-            }
-            if (browser.versions.ios) {
-            //是否在IOS浏览器打开
-            } 
-            if(browser.versions.android){
-            //是否在安卓浏览器打开
-            }*/
-			$(".line").remove();
-            
-        }
-        /*else {
-        //否则就是PC浏览器打开
-        window.close();
-        }    */
-    });
-    $(document).ready(function(){
-        $("#r_ul").width($("#avatar").width()*1.25);
-    });
-    </script>
-    
+
 <body>
-
-    <div class="container">
-        <br>
-        <br>
-    </div>
-    <div class="container">
-        <div class="col-sm-1">
-        </div>
-        <div class="col-sm-6">
-            <div class="panel panel-body">
-                <h1 style="font-size:50px">
-                    <b>Kede Ma</b>
-                </h1>
-				<p style="font-size:20px">
-                Assistant Professor
-                <br>
-                <a target="_blank" href="https://www.cs.cityu.edu.hk/">Department of Computer Science</a>
-                <br>
-                <a target="_blank" href="https://www.cityu.edu.hk/">City University of Hong Kong</a>
-				</p>
-            </div>
-            <div class="panel panel-body">
-                <ul>
-                    <li style="font-size:20px">
-                        <a href="./Publications.html" >Publications</a><br>
-                    </li>
-                    <li style="font-size:20px">
-                        <a target="_blank" href="https://scholar.google.com.hk/citations?user=sfzOyFoAAAAJ&hl=en">Google Scholar</a><br>
-                    </li style="font-size:20px">
-                    <li style="font-size:20px">
-                        <a href="./Bio.html">Biography</a><br>
-                    </li>
-                    <li  style="font-size:20px">
-                        <a href="./Prospective_students.html">Prospective Students</a><br>
-                    </li>
-                </ul>
-                    
-                    
-                    
-            </div>
-       
-        </div>
-        <div class="col-sm-1 line">
-                <table style="height:440px;border-color:#d9d9d9;border-left-style:solid;border-width:3px"><tr><td valign="top"></td></tr></table>
-        </div>
-        <div class="col-sm-4">
-            <div style="width: 60%;" class="center-block">
-            <img src="./img/avatar-195x195.png" class="img-responsive center-block" style="width:auto; height:auto;" id='avatar'>
+    <div class="box container">
+        <div class="container">
             <br>
+            <br>
+        </div>
+
+        <div class="container">
+            <div class="col-sm-1">
             </div>
-            <ul class="center-block" style="list-style:none;" id='r_ul'>
+            <div class="col-sm-6">
+                <div class="panel panel-body">
+                    <h1 style="font-size:50px">
+                        <b>Kede Ma</b>
+                    </h1>
+                    <p style="font-size:20px">
+                    Assistant Professor
+                    <br>
+                    <a target="_blank" href="https://www.cs.cityu.edu.hk/">Department of Computer Science</a>
+                    <br>
+                    <a target="_blank" href="https://www.cityu.edu.hk/">City University of Hong Kong</a>
+                    </p>
+                </div>
+
+                <div class="panel panel-body" style="border-bottom-style: none;">
+                    <ul>
+                        <li style="font-size:20px">
+                            <a href="./Publications.html" >Publications</a><br>
+                        </li>
+                        <li style="font-size:20px">
+                            <a target="_blank" href="https://scholar.google.com.hk/citations?user=sfzOyFoAAAAJ&hl=en">Google Scholar</a><br>
+                        </li style="font-size:20px">
+                        <li style="font-size:20px">
+                            <a href="./Bio.html">Biography</a><br>
+                        </li>
+                        <li  style="font-size:20px">
+                            <a href="./Prospective_students.html">Prospective Students</a><br>
+                        </li>
+                    </ul>  
+                </div>
+            </div>
+
+            <div class="col-sm-1 line">
+                <table style="height:440px;border-color:#d9d9d9;border-left-style:solid;border-width:3px">
+                    <tr>
+                        <td valign="top">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="col-sm-4">
+                <div style="width: 60%;" class="center-block">
+                    <img src="./img/avatar-195x195.png" class="img-responsive center-block" >
+                    <br>
+                </div>
+
+                <ul class="center-block" style="list-style:none;" id='r_ul'>
                     <li style="font-size:18px">
                         <b>Post</b>：83 Tat Chee Avenue, Y6424, Yeung Building, Kowloon, Hong Kong <br>
                     </li>
@@ -127,22 +86,19 @@
                         <b>Email</b>：kede.ma [AT] cityu.edu.hk 
                     </li>
                 </ul>
-             <br>
-           
+                <br>
             </div>
-            
         </div>
-
-
-</body>
+    </div>
 </body>
 </html>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42280108-2"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'UA-42280108-2');
+    gtag('config', 'UA-42280108-2');
 </script>
