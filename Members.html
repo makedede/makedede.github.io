@@ -31,6 +31,10 @@
             //alert(stuName.replace(' ','').toLowerCase());
             //图片名一定要按照规律写，例如peibeicao，zhihuawang，并且文件后缀一定要固定为jpeg
             var imgName = "./img/" + stuName.replace(' ','').toLowerCase() +'.jpeg';
+            $("[name='stuName']").each(function(){  
+                $(this).parent().attr('style','list-style:none');  
+            });
+            $(this).parent().removeAttr("style");
             if(isHasImg(imgName)){
                 $('#face').attr("src",imgName);
             }else{
@@ -64,20 +68,22 @@
                     <b>Permanent Fixtures</b> 
                 </li>
                 <ul>
-                    <a href="" name='stuName'>Kede Ma</a>
+                    <li style="list-style:none"> 
+                        <a href="" name='stuName'>Kede Ma</a>
+                    </li>
                 </ul>
                 <li style="list-style:none">
                     <b>Ph.D Students</b> 
                 </li>
                 <ul>
 
-                    <li>
+                    <li style="list-style:none">
                         <a href="" name='stuName'>Zhihua Wang</a> (Summer 2019 - )
                     </li>
-                    <li>
+                    <li style="list-style:none">
                         <a href="" name='stuName'>Peibei Cao</a> (Fall 2020 - ) 
                     </li>
-                    <li>
+                    <li style="list-style:none">
                         <a href="" name='stuName'>Xiangyang Zhu</a> (Fall 2020 - )
                     </li>
                 </ul>       
