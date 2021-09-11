@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kede Ma, lab members</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./bootstrap/main.css">
+    <script src="./jquery/jquery-3.3.1.min.js"></script>
+</head>
+
+<style>
+.container{
+    max-width: 1000px;
+}
+</style>
+<script>
+    $(document).ready(function(){
+        function isHasImg(pathImg){
+            var ImgObj=new Image();
+            ImgObj.src= pathImg;
+            if(ImgObj.fileSize > 0 || (ImgObj.width > 0 && ImgObj.height > 0)){
+                return true;
+            } else {
+                return false;
+            }
+        }
+        $("[name='stuName']").hover(function(){
+            var stuName = $(this).html();
+            //alert(stuName.replace(' ','').toLowerCase());
+            //图片名一定要按照规律写，例如peibeicao，zhihuawang，并且文件后缀一定要固定为jpeg
+            var imgName = "./img/" + stuName.replace(' ','').toLowerCase() +'.jpeg';
+            $("[name='stuName']").each(function(){  
+                $(this).parent().attr('style','list-style:none');  
+            });
+            $(this).parent().removeAttr("style");
+            if(isHasImg(imgName)){
+                $('#face').attr("src",imgName);
+            }else{
+                $('#face').attr("src",'./img/default.jpeg');
+            }
+        });
+    });
+</script>
+<body>
+    <div class="box container">
+        <div class="container">
+            <br>
+            <br>
+        </div>
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="panel panel-body">
+                    <h2><b>Members of Multimedia Analytics (MA) Laboratory</b></h2>  
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-sm-4">
+                <div style="width:147px;height:158px" class="center-block">
+                    <img src="./img/default.jpeg" class="center-block" id="face">
+                    <br>
+                </div>
+            </div>
+            <div class="col-sm-8">
+                <li style="list-style:none">
+                    <b>Permanent Fixtures</b> 
+                </li>
+                <ul>
+                    <li style="list-style:none"> 
+                        <a href="" name='stuName'>Kede Ma</a>
+                    </li>
+                </ul>
+                <li style="list-style:none">
+                    <b>PhD Students</b> 
+                </li>
+                <ul>
+
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Zhihua Wang</a> (Summer 2019 - )
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Peibei Cao</a> (Fall 2020 - ) 
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Xiangyang Zhu</a> (Fall 2020 - )
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Wen Wen</a> (Fall 2021 - ), with <a href="https://sites.google.com/site/aisquaredlab/about-us/linqi">Linqi Song</a>
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Haoyu Chen</a> (Fall 2021 - ), with <a href="https://sites.google.com/site/aisquaredlab/about-us/linqi">Linqi Song</a>
+                    </li>
+                    <li style="list-style:none">
+                        <a href="" name='stuName'>Mian Zou</a> (Fall 2021 - )
+                    </li>
+                </ul>       
+            </div>
+            
+        </div>  
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="panel panel-body">
+                    <h2><b>Notes to Prospective Students</b></h2>  
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="col-sm-12">
+                <div class="panel panel-body" style="border-bottom-style: none;">
+                    <ul>
+                        <li>                          
+                            We are always seeking for "top-performing" students to join our research team. Please send me an email if you are interested, with your CV, transcript and a brief research statement. The "performance" is qualitatively measured by 1) background in mathematics, 2) skill in computer programming, and 3) intuition in working on research projects.
+                        </li>
+                        <li >
+                            We welcome highly self-motivated undergraduates at CityU to conduct research with us. Self-funded visiting scholars are also welcome to apply.
+                        </li>
+                    </ul>          
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42280108-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-42280108-2');
+</script>
