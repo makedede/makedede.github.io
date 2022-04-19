@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>The Waterloo Exploration Database</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container scrollspy" id="home">
+
+      <h4 class="header center black-text">Waterloo Exploration Database: New Challenges <br>  for Image Quality Assessment Models</h4>
+
+      <br>
+
+      <div class="row center">
+        <h5 class="header col s4">
+          <div class="author"><a href="https://kedema.org" target="blank">Kede Ma</a></div>
+          <div class="school"><a href="https://www.uwaterloo.ca/" target="blank">University of Waterloo</a></div>
+          <!--<div class="school"><a href="https://www.polyu.edu.hk/" target="blank">HK PolyU</a></div>-->
+        </h5>
+		<h5 class="header col s4">
+          <div class="author"><a href="https://ece.uwaterloo.ca/~zduanmu/" target="blank">Zhengfang Duanmu</a></div>
+          <div class="school"><a href="https://www.uwaterloo.ca/" target="blank">University of Waterloo</a></div>
+        </h5>
+        <h5 class="header col s4">
+          <div class="author"><a href="http://222.197.180.3/IVIPCWebpage/wqb/" target="blank">Qingbo Wu</a></div>
+          <div class="school"><a href="http://en.uestc.edu.cn/" target="blank">UESTC</a></div>
+          <div class="school"><a href="https://www.uwaterloo.ca/" target="blank">University of Waterloo</a></div>
+        </h5>
+      </div>
+
+      <div class="row center">
+        <h5 class="header col s3">
+          <div class="author"><a href="https://ece.uwaterloo.ca/~z70wang/" target="blank">Zhou Wang</a></div>
+          <div class="school"><a href="https://www.uwaterloo.ca/" target="blank">University of Waterloo</a></div>
+        </h5>
+        <h5 class="header col s3">
+          <div class="author">Hongwei Yong</div>
+          <div class="school"><a href="http://en.xjtu.edu.cn/" target="blank">XJTU</a></div>
+          <div class="school"><a href="https://www.polyu.edu.hk/" target="blank">HK PolyU</a></div>
+        </h5>
+        <h5 class="header col s3">
+          <div class="author"><a href="http://ivipc.uestc.edu.cn/hlli/" target="blank">Hongliang Li</a></div>
+          <div class="school"><a href="http://en.uestc.edu.cn/" target="blank">UESTC</a></div>
+        </h5>
+        <h5 class="header col s3">
+          <div class="author"><a href="http://www4.comp.polyu.edu.hk/~cslzhang/" target="blank">Lei Zhang</a></div>
+          <div class="school"><a href="https://www.polyu.edu.hk/" target="blank">HK PolyU</a></div>
+        </h5>
+        
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12">
+		 <a class="materialboxed"><img class="responsive-img" src="images/sampleImg.png"></a>
+        </div>
+      </div>
+
+    </div>
+
+    <br>
+
+    <div class="row section scrollspy" id="abstract">
+      <div class="title">Abstract</div>
+      <p align="justify">The great content diversity of real-world digital images poses a grand challenge to image quality assessment (IQA) models, which are traditionally designed and validated on a handful of commonly used IQA databases with very limited content variation. To test the generalization capability and to facilitate the wide usage of IQA techniques in real-world applications, we establish a large-scale database named the Waterloo Exploration database, which in its current state contains 4,744 pristine natural images and 94,880 distorted images created from them. Instead of collecting the mean opinion score for each image via subjective testing, which is extremely difficult if not impossible, we present three alternative test criteria to evaluate the performance of IQA models, namely the pristine/distorted image discriminability test (D-test), the listwise ranking consistency test (L-test), and the pairwise preference consistency test (P-test). We compare 20 well-known IQA models using the proposed criteria, which not only provide a stronger test in a more challenging testing environment for existing models, but also demonstrate the additional benefits of using the proposed database. For example, in the P-test, even for the best performing no-reference IQA model, more than 6 million failure cases against the model are "discovered" automatically out of over 1 billion test pairs. Furthermore, we discuss how the new database may be exploited using innovative approaches in the future, to reveal the weaknesses of existing IQA models, to provide insights on how to improve the models, and to shed light on how the next-generation IQA models may be developed.</p>
+    </div>
+
+    <!--<div class="row section scrollspy" id="paper">
+      <div class="title">Paper</div>
+        <div class="col s12">
+          <img src="images/icon_pdf.png"> <a href="paper/cvpr16_gmad.pdf" target="_blank">CVPR 2016 paper</a>
+        </div>
+        <div class="col s12">
+          <img src="images/icon_pdf.png"> <a href="paper/cvpr16_gmad_slide.pdf" target="_blank">CVPR 2016 spotlight slide</a>
+        </div>
+    </div>-->
+
+
+    <div class="section row scrollspy" id="dataset">
+      <div class="title">Downloads</div>
+      <div class="row">
+        <div class="col s6 center">
+          <a href="../../paper/17_TIP_EXPLORATION.pdf" target="_blank">
+            <!--<i class="fa fa-folder-open fa-5x" aria-hidden="true"></i>  -->
+            <img src="images/PDF.png">
+          </a>
+          <br>
+          <a href="../../paper/17_TIP_EXPLORATION.pdf" target="_blank">Paper (5.6 MB)</a>
+        </div>
+        <div class="col s6 center">
+          <a href="http://ivc.uwaterloo.ca/database/WaterlooExploration/exploration_database_and_code.rar" target="_blank">
+            <img src="images/ZIP.png">
+          </a>
+          <br>
+          <a href="http://ivc.uwaterloo.ca/database/WaterlooExploration/exploration_database_and_code.rar" target="_blank">Database and codes (1.9 GB)</a>
+        </div>
+      </div>
+	  
+	  <div class="row">
+      <div class="title">Bibtex</div>
+		<pre>
+@article{ma2017waterloo,
+	author    = {Ma, Kede and Duanmu, Zhengfang and Wu, Qingbo and Wang, Zhou and Yong, Hongwei and Li, Hongliang and Zhang, Lei}, 
+	title     = {{Waterloo Exploration Database}: New Challenges for Image Quality Assessment Models}, 
+	journal   = {IEEE Transactions on Image Processing},
+	volume    = {26},
+	number    = {2},
+	pages     = {1004--1016},
+	month	  = {Feb.},
+	year      = {2017}}</pre>
+    </div>
+     <!-- <div class="row">
+        <p align="justify">Instruction:</p> 
+        <ol>
+          <li align="justify">The gMAD toolbox has a dependency upon the LIVE Image Quality Assessment database, which can be downloaded from <a href="http://live.ece.utexas.edu/research/quality/subjective.htm">Here</a>.</li>
+          <li align="justify">Download the Waterloo Exploration database and the gMAD toolbox.</li>
+          <li align="justify">Put your algorithm in the root folder of the toolbox, and execute the initialization script.</li>
+          <li align="justify">After the initialization step, you can find all generated image pairs in the ./data/test_image folder, from which you may gain a first impression on how the models compete with each other.</li>
+          <li align="justify">Execute run_subjective_test script to start the subjective testing.</li>
+          <li align="justify">Go to the ./support_functions/cvx folder and execute the cvx_setup script. Then execute data_analysis script to obtain global ranking results.</li>
+        </ol>
+        <p align="justify">Run demo to see a sample program.</p> 
+      </div>
+    </div> -->
+
+    <div class="section row scrollspy" id="results">
+      <div class="title">Results</div>
+      <br>
+      <div class="subtitle">- Evaluated Algorithms</div>
+      <table class="bordered striped">
+        <thead>
+          <tr>
+              <th data-field="id">Algorithm</th>
+              <th data-field="name">Reference</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PSNR</td>
+            <td>Peak signal to noise ratio</td>
+          </tr>
+          <tr>
+            <td>SSIM</td>
+            <td>Wang et al. Image quality assessment: from error visibility to structural similarity. TIP. 2004.</td>
+          </tr>
+          <tr>
+            <td>MS-SSIM</td>
+            <td>Wang et al. Multi-scale structural similarity for image quality assessment. Asilomar. 2003.</td>
+          </tr>
+		  <tr>
+            <td>VIF</td>
+            <td>Sheikh et al. Image information and visual quality. TIP. 2006.</td>
+          </tr>
+          <tr>
+            <td>FSIM</td>
+            <td>Zhang et al. A feature similarity index for image quality assessment. TIP. 2011.</td>
+          </tr>
+		  <tr>
+            <td>GMSD</td>
+            <td>Xue et al. Gradient magnitude similarity deviation: a highly efficient perceptual image quality index. TIP. 2014.</td>
+          </tr>
+		  <td>WANG05</td>
+            <td>Wang et al. Reduced-reference image quality assessment using a wavelet-domain natural image statistic model. HVEI. 2005.</td>
+          </tr>
+		  <td>RRED</td>
+            <td>Soundararajan et al. RRED indices: Reduced reference entropic differencing for image quality assessment. TIP. 2012.</td>
+          </tr>
+          <tr>
+            <td>BIQI</td>
+            <td>Moorthy et al. A two-step framework for constructing blind image quality indices. SPL. 2010.</td>
+          </tr>
+          <tr>
+            <td>BLINDS-II</td>
+            <td>Saad et al. Blind image quality assessment: a natural scene statistics approach in the DCT domain. TIP. 2012.</td>
+          </tr>
+          <tr>
+            <td>BRISQUE</td>
+            <td>Mittal et al. No-reference image quality assessment in the spatial domain. TIP. 2012.</td>
+          </tr>
+          <tr>
+            <td>CORNIA</td>
+            <td>Ye et al. Unsupervised feature learning framework for no-reference image quality assessment. CVPR. 2012.</td>
+          </tr>
+          <tr>
+            <td>DIIVINE</td>
+            <td>Moorthy et al. Blind image quality assessment: from scene statistics to perceptual quality. TIP. 2011.</td>
+          </tr>
+          <tr>
+            <td>IL-NIQE</td>
+            <td>Zhang et al. A feature-enriched completely blind image quality evaluator. TIP. 2015.</td>
+          </tr>
+          <tr>
+            <td>LPSI</td>
+            <td>Wu et al. A highly efficient method for blind image quality assessment. ICIP. 2015.</td>
+          </tr>
+          <tr>
+            <td>M3</td>
+            <td>Xue et al. Blind image quality assessment using joint statistics of gradient magnitude and Laplacian features. TIP. 2014.</td>
+          </tr>
+          <tr>
+            <td>NFERM</td>
+            <td>Gu et al. Using free energy principle for blind image quality assessment. TMM. 2015.</td>
+          </tr>
+          <tr>
+            <td>NIQE</td>
+            <td>Mittal et al. Making a completely blind image quality analyzer. SPL. 2013.</td>
+          </tr>
+          <tr>
+            <td>QAC</td>
+            <td>Xue et al. Learning without human scores for blind image quality assessment. CVPR. 2013.</td>
+          </tr>
+          <tr>
+            <td>TCLT</td>
+            <td>Wu et al. Blind image quality assessment based on multichannel features fusion and label transfer. TCSVT. 2016.</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+
+      <div class="subtitle">- Performance Comparison</div>
+      <br>
+      <div class="row center">
+        <div class="col s12">
+          <a class="materialboxed"><img class="responsive-img" src="images/F.png" height="50%" width="50%"></a>
+          <h5 align="center">D-test</h5>
+        </div>
+	   </div>
+	   <div class="row center">
+        <div class="col s12">
+          <a class="materialboxed"><img class="responsive-img" src="images/SRCC.png" height="50%" width="50%"></a>
+          <h5 align="center">L-test</h5>
+        </div>
+      </div>
+      
+      <div class="row center">
+        <div class="col s12">
+          <a class="materialboxed"><img class="responsive-img" src="images/par.png" height="50%" width="50%"></a>
+		  <h5 align="center">P-test</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row section scrollspy" id="copyright">
+      <div class="title">Copyright Notice</div>
+      <p align="justify">Rights to all images are retained by the photographers. For researchers and educators who wish to use the images for non-commercial research and/or educational purposes, we can provide access under the following terms:
+      </p> 
+      <ol>
+        <li align="justify">Researcher shall use the Database only for non-commercial research and educational purposes.</li>
+        <li align="justify">University of Waterloo makes no representations or warranties regarding the Database, including but not limited to warranties of non-infringement or fitness for a particular purpose.</li>
+        <li align="justify">Researcher accepts full responsibility for his or her use of the Database and shall defend and indemnify University of Waterloo, including their employees, Trustees, officers and agents, against any and all claims arising from Researcher's use of the Database, including but not limited to Researcher's use of any copies of copyrighted images that he or she may create from the Database.</li>
+        <li align="justify">Researcher may provide research associates and colleagues with access to the Database provided that they first agree to be bound by these terms and conditions.</li>
+        <li align="justify">University of Waterloo reserves the right to terminate Researcher's access to the Database at any time.</li>
+        <li align="justify">If Researcher is employed by a for-profit, commercial entity, Researcher's employer shall also be bound by these terms and conditions, and Researcher hereby represents that he or she is fully authorized to enter into this agreement on behalf of such employer.</li>
+      </ol>
+    </div>
+  </div>
+	<div class="row center">
+	<script type="text/javascript" src="//rc.revolvermaps.com/0/0/8.js?i=2vv6x3ukt6a&amp;m=0&amp;s=220&amp;c=ff0000&amp;cr1=ffffff&amp;f=arial&amp;l=33" async="async"></script>
+	</div>
+  <footer class="page-footer white">
+    <div class="footer-copyright center black-text">
+      Copyright &#169; 2016
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
