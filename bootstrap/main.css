@@ -50,3 +50,26 @@ img {
 	box-shadow: 0px 0px 10px  #999;
 	border-radius: 15px; 
 }  
+
+/* Always keep images responsive */
+#ma-lab-logo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Mobile: stop overlay positioning and stack nicely */
+@media (max-width: 600px) {
+  #ma-lab-logo {
+    position: static !important;   /* key: prevents overlap */
+    float: none !important;
+    display: block;
+    margin: 12px auto 0;
+    max-width: 90vw;               /* scale down on phones */
+    transform: none !important;
+  }
+
+  /* If you previously reserved space for the logo near the title */
+  h1, h2 {
+    padding-right: 0 !important;
+  }
+}
