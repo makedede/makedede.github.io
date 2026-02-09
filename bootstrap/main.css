@@ -51,25 +51,22 @@ img {
 	border-radius: 15px; 
 }  
 
-/* Always keep images responsive */
-#ma-lab-logo {
-  max-width: 100%;
-  height: auto;
+.panel.panel-body h1{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
 }
 
-/* Mobile: stop overlay positioning and stack nicely */
-@media (max-width: 600px) {
-  #ma-lab-logo {
-    position: static !important;   /* key: prevents overlap */
-    float: none !important;
-    display: block;
-    margin: 12px auto 0;
-    max-width: 90vw;               /* scale down on phones */
-    transform: none !important;
-  }
+/* Ensure the logo never forces overflow */
+#ma-lab-logo{
+  height:2.5em;
+  width:auto;
+  max-width:90vw;
+}
 
-  /* If you previously reserved space for the logo near the title */
-  h1, h2 {
-    padding-right: 0 !important;
+/* On phones, stack title and logo cleanly */
+@media (max-width: 600px){
+  .panel.panel-body h1{
+    justify-content:flex-start;   /* optional: looks nicer on mobile */
   }
 }
