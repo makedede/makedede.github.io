@@ -18,69 +18,6 @@
     .container{
         max-width: 1000px;
     }
-
-    .publications-header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        gap: 24px;
-        margin: 0;
-        line-height: .9;
-        padding: 0;
-        flex-wrap: wrap;
-    }
-
-    .publications-header-title{
-        display: inline-block;
-        min-width: 0;
-    }
-
-    .page-header-panel{
-        border-bottom: none;
-    }
-
-    #ma-lab-logo{
-        display: block;
-        height: 2.5em;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
-        flex-shrink: 1;
-    }
-
-    @media (max-width: 767px){
-        .box{
-            margin: 12px auto;
-        }
-
-        .publications-header{
-            justify-content: flex-start;
-            align-items: flex-start;
-            gap: 14px;
-            line-height: 1.05;
-        }
-
-        .publications-header-title{
-            width: 100%;
-        }
-
-        #ma-lab-logo{
-            height: auto;
-            width: min(100%, 260px);
-        }
-
-        .media{
-            margin-left: 0;
-        }
-
-        .media-body{
-            padding-left: 0;
-        }
-
-        #tag{
-            line-height: 1.4;
-        }
-    }
 	</style>
 
 </head>
@@ -94,10 +31,10 @@
 	<div class="content">
 		 <div class="container">
             <div class="col-sm-12">
-                <div class="panel panel-body page-header-panel">
-                    <h1 class="publications-header">
-                        <span class="publications-header-title"><b>Publications</b></span>
-                        <img id="ma-lab-logo" src="./svg/MALab-logo-r.svg" alt="MA Lab Logo">
+                <div class="panel panel-body">
+                    <h1 style="display: flex; align-items: center; justify-content: space-between; margin: 0px 0 0 0; line-height: .8; padding: 0;">
+                        <span style="display: inline-block;"><b>Publications</b></span>
+                        <img id = "ma-lab-logo" src="./svg/MALab-logo-r.svg" alt="MA Lab Logo" style="height: 2.5em; width: auto; max-width: 100%; object-fit: contain;">
                     </h1>
                 </div>
             </div>
