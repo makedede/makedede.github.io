@@ -14,16 +14,48 @@
         max-width: 1000px;
     }
 
-    /* Responsive logo size for mobile devices */
-    @media (max-width: 768px) {
-        #ma-lab-logo {
-            height: 1.8em !important;
-        }
+    .bio-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+        margin: 0;
+        padding: 0;
+        line-height: 0.8;
     }
 
-    @media (max-width: 480px) {
-        #ma-lab-logo {
-            height: 1.2em !important;
+    .bio-title {
+        display: inline-block;
+        min-width: 0;
+    }
+
+    .bio-logo {
+        display: block;
+        width: 25.5rem;
+        max-width: 100%;
+        height: auto;
+        flex: 0 1 25.5rem;
+        min-width: 0;
+        object-fit: contain;
+    }
+
+    @media (max-width: 767px) {
+        .bio-header {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 12px;
+            line-height: 1;
+        }
+
+        .bio-title {
+            flex-basis: 100%;
+        }
+
+        .bio-logo {
+            width: 20rem;
+            max-width: 100%;
+            flex-basis: 20rem;
         }
     }
 </style>
@@ -37,9 +69,9 @@
         <div class="container">
             <div class="col-sm-12">
                 <div class="panel panel-body">
-                    <h1 style="display: flex; align-items: center; justify-content: space-between; margin: 0px 0 0 0; line-height: .8; padding: 0;">
-                        <span style="display: inline-block;"><b>Biography</b></span>
-                        <img id = "ma-lab-logo" src="./svg/MALab-logo-r.svg" alt="MA Lab Logo" style="height: 2.5em; width: auto; max-width: 100%; object-fit: contain;">
+                    <h1 class="bio-header">
+                        <span class="bio-title"><b>Biography</b></span>
+                        <img id="ma-lab-logo" class="bio-logo" src="./svg/MALab-logo-r.svg" alt="MA Lab Logo">
                     </h1>
                 </div>
             </div>
