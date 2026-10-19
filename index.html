@@ -2,18 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <title>Kede Ma, home page</title>
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./bootstrap/main.css">
     <!-- 这里是网站logo-->
     <link rel="icon" type="image/svg+xml" href="./svg/MALab-logo-s.svg">
-</head>
 <style>
-        .container{
-            width: 900px !important
+        .box.container {
+            width: 100%;
+            max-width: 900px;
+        }
+        .box > .container { width: 100%; }
+        .home-divider {
+            height: 410px;
+            border-left: 3px solid #d9d9d9;
+        }
+        @media (max-width: 767px) {
+            .home-divider-column { display: none; }
         }
 </style>
+</head>
 
 
 <body>
@@ -41,6 +51,7 @@
                 </div>
 
                 <div class="panel panel-body" style="border-bottom-style: none;">
+                    <nav aria-label="Main navigation">
                     <ul>
                         <li style="font-size:18px">
                             <a href="./Publications.html" >Publications</a><br>
@@ -54,41 +65,36 @@
                         <li  style="font-size:18px">
                             <a href="./Members.html">Lab Members</a><br>
                         </li>
-                    </ul>  
+                    </ul>
+                    </nav>
                 </div>
             </div>
 
-            <div class="col-sm-1 line">
-                <table style="height:410px;border-color:#d9d9d9;border-left-style:solid;border-width:3px">
-                    <tr>
-                        <td valign="top">
-                        </td>
-                    </tr>
-                </table>
+            <div class="col-sm-1 line home-divider-column" aria-hidden="true">
+                <div class="home-divider"></div>
             </div>
 
             <div class="col-sm-5">
                 <div style="width: 53%;" class="center-block">
-                    <img src="./img/photo3.jpeg" class="img-responsive center-block" >
+                    <img src="./img/photo3.jpeg" class="img-responsive center-block" alt="Kede Ma">
                     <br>
                 </div>
                 <ul class="center-block" style="list-style:none;" >
                     <li style="font-size:16px">
-                        <b>Post</b>：83 Tat Chee Avenue, Y6410, Yeung Building, Kowloon, Hong Kong <br>
+                        <b>Post</b>: 83 Tat Chee Avenue, Y6410, Yeung Building, Kowloon, Hong Kong <br>
                     </li>
                     <li style="font-size:16px">
-                        <b>Office</b>：3442-7762
+                        <b>Office</b>: 3442-7762
                     </li>
                     <li style="font-size:16px">
-                        <b>Email</b>：kede.ma [AT] cityu.edu.hk 
+                        <b>Email</b>: kede.ma [AT] cityu.edu.hk
                     </li>
                 </ul>
                 <br>
             </div>
         </div>
     </div>
-</body>
-</html>
+
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-42280108-2"></script>
@@ -99,3 +105,5 @@
 
     gtag('config', 'UA-42280108-2');
 </script>
+</body>
+</html>
