@@ -62,16 +62,8 @@
 </style>
 <script>
     $(document).ready(function(){
-        function isHasImg(pathImg){
-            var ImgObj=new Image();
-            ImgObj.src= pathImg;
-            if(ImgObj.fileSize > 0 || (ImgObj.width > 0 && ImgObj.height > 0)){
-                return true;
-            } else {
-                return false;
-            }
-        }
-        $("[name='stuName']").hover(function(){
+        var photoRequestId = 0;
+        $("[name='stuName']").on('mouseenter', function(){
             var stuName = $(this).html();
             //alert(stuName.replace(' ','').toLowerCase());
             //图片名一定要按照规律写，例如peibeicao，zhihuawang，并且文件后缀一定要固定为jpeg
@@ -80,11 +72,21 @@
                 $(this).parent().attr('style','list-style:none');  
             });
             $(this).parent().removeAttr("style");
-            if(isHasImg(imgName)){
-                $('#face').attr("src",imgName);
-            }else{
-                $('#face').attr("src",'./img/default.jpeg');
-            }
+            var requestId = ++photoRequestId;
+            var photo = new Image();
+            $('#face').attr("src",'./img/default.jpeg');
+            // Only the latest selection may update the displayed portrait.
+            photo.onload = function(){
+                if(requestId === photoRequestId){
+                    $('#face').attr("src",imgName);
+                }
+            };
+            photo.onerror = function(){
+                if(requestId === photoRequestId){
+                    $('#face').attr("src",'./img/default.jpeg');
+                }
+            };
+            photo.src = imgName;
         });
     });
 </script>
